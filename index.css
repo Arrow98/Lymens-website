@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.navbar {
+    background-color: rgba(30, 53, 255,0.9);
+    overflow: hidden;
+    height: 10vh;
+    padding: 0px 40px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+
+  .navbar #school-name {
+    float: left;
+    color: white;
+    font-size: 33px;
+    font-weight: bold;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar a:hover {
+    background-color: white;
+    color: navy;
+  }
+  .explorer-section {
+    height: 600px;
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+  }
+
+  .explorer-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .explorer-section h2 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+    z-index: 2;
+    height: 150px;
+    line-height: 70px;
+  }
+
+  .read-more-btn {
+    background-color: navy;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    z-index: 2;
+    height: 50px;
+    border-radius: 50px;
+    transition: 0.7s;
+  }
+
+  .read-more-btn:hover {
+    background-color: white;
+    color: navy;
+    transform: scale(1.5);
+  }
+
+  .middle{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  .middle-header{
+    padding-left: 40px;
+    width: 100%;
+    display: flex;
+  }
+  .middle-header>div{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border-bottom: 3px solid navy;
+    margin: 20px;
+  }
+.middle-mid{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    margin-top: 50px;
+    justify-content: center;
+}
+.middle-mid >div{
+    display: flex;
+    height: 100%;
+    width: 30%;
+   margin: 0px 10px;
+}
+.grid1{
+    display: flex;
+    flex-direction: column;
+}
+.grid1-img{
+    width: 100%;
+    height: 70%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.grid1-info{
+    background-color: navy;
+    width: 100%;
+    height: 30%;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 15px;
+    color: white;
+    line-height: 40px;
+}
+.grid3-info{
+    background-color: goldenrod;
+    width: 100%;
+    height: 30%;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 15px;
+    color: white;
+    line-height: 40px;
+}
+.grid2{
+    display: flex;
+    flex-direction: column;
+}
+.grid2-info{
+    background-color: green;
+    width: 100%;
+    height: 70%;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    line-height: 30px;
+    text-align: justify;
+}
+.grid2-img{
+    width: 100%;
+    height: 30%;
+}
+.grid2-img>img{
+    object-fit: cover;
+}
+.about-section{
+    display: flex;
+    height: 70vh;
+    width: 92.5%;
+    margin: 80px auto;
+}
+.about-img{
+    width: 50%;
+    height: 100%;
+}
+.about-info{
+    width: 40%;
+    height: 100%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.info-head{
+    display: flex;
+}
+.about-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: navy;
+}
+.line{
+    border-top: 3px solid navy;
+    border-bottom: 3px solid navy;
+    width: 60px;
+    height: 80%;
+    margin-left: 20px;
+}
+.line2{
+    border-bottom: 3px solid navy;
+    width: 30px;
+    height: 80%;
+}
+.about-header{
+    margin-top: 20px;
+    font-size: 45px;
+    font-weight: bold;
+}
+p{
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 30px;
+}
+.container {
+    display: flex;
+    margin-top: 50px;
+    height: 100px; 
+  }
+  
+  .left-side,
+  .right-side {
+    display: flex;
+    flex-direction: column;
+    margin-right: 150px;
+  }
+  
+  .box {
+    width: 200px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+  .box>img{
+    width: 15px;
+    margin-right: 10px;
+  }
+  .about-info-btn {
+    background-color: navy;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 180px;
+    height: 70px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: 0.7s;
+  }
+  .about-info-btn:hover{
+    transform: scale(1.1)
+  }
+  .employee-section{
+    display: flex;
+    flex-direction: column;
+    width: 92.5%;
+    margin: 80px auto;
+    height: 90vh;
+  }
+  .employee-section-head{
+    display: flex;
+    width: 100%;
+    height: 20px;
+    margin-top: 30px;
+    justify-content: center;
+  }
+  .line3{
+    border-bottom: 3px solid navy;
+    width: 30px;
+    height: 85%;
+    margin-top: 3px;
+  }
+.line4{
+    border-top: 3px solid navy;
+    border-bottom: 3px solid navy;
+    width: 60px;
+    height: 85%;  
+    margin-top: 3px; 
+    margin-right: 20px;
+}
+.employee-section-head-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: navy;
+}
+.line5{
+    border-top: 3px solid navy;
+    border-bottom: 3px solid navy;
+    width: 60px;
+    height: 85%;  
+    margin-top: 3px;
+    margin-left: 20px;
+}
+.line6{
+    border-bottom: 3px solid navy;
+    width: 30px;
+    height: 85%;  
+    margin-top: 3px;
+}
+.employee-section-header{
+    display: flex;
+    font-size: 50px;
+    justify-content: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.employee-list{
+    width: 100%;
+    margin: 50px auto 0px auto;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+}
+.employee-list > div{
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+    height: 100%;
+}
+.employee-image{
+    width: 100%;
+    height: 75%;
+    overflow:  hidden !important;
+}
+.employee-info{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F0FBFC;
+}
+.employee-name{
+    text-align: center;
+    width: 100%;
+    margin: 20px 0px 10px 0px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.employee-status{
+    width: 100%;
+    text-align: center;
+}
+.image{
+    transition: .5s;
+    vertical-align: middle;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    max-width: 100%;
+    height: 100%;
+}
+.image:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
