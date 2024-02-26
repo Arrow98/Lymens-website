@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.navbar {
+    background-color: navy;
+      overflow: hidden;
+      height: 10vh;
+      padding: 0px 40px;
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+      width: 100%;
+    }
+  
+    .navbar #school-name {
+      float: left;
+      color: white;
+      font-size: 33px;
+      font-weight: bold;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .navbar a {
+      float: right;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .navbar a:hover {
+      background-color: white;
+      color: navy;
+    }
+    .psf-about-us-section {
+        width: 80%;
+        padding: 100px;
+        text-align: justify;
+      }
+      .psf-about-us-section >h2{
+        margin: 30px 0px;
+        font-size: 40px;
+        color: navy;
+      }
+      .psf-about-us-section > p{
+        font-size: 20px;
+        line-height: 30px;
+      }
+      .psf-about-us-aside {
+        display: flex;
+        width: 30%;
+        flex-direction: column;
+        padding: 100px;
+        position: fixed;
+        left: 70%;
+      }
+      .psf-about-us-section h2 {
+        position: static;
+      }
+      .psf-about-us-aside h1 {
+        color: var(--primary-color);
+        padding-bottom: 5px;
+        border-bottom: 1px solid #eee;
+      }
+      .psf-aside-text {
+        font-size: 16px;
+        padding: 20px;
+        border-bottom: 1px dotted #eee;
+      }
+      .psf-aside-text:hover,
+      .psf-active-link {
+        background-color: var(--primary-color-2);
+        color: var(--primary-color-9);
+        cursor: pointer;
+      }
+      .psf-about-us-aside a {
+        color: black;
+      }
+      footer {
+        width: 100%;
+        background-color: navy;
+        color: white !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 70px;
+        margin-top: 150px;
+      }
+      .psf-footer-layout {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+      }
+      .psf-about-section,
+      .psf-contact-section,
+      .psf-ouick-links,
+      .psf-contact-mail {
+        width: 100%;
+        height: 100%;
+        text-align: justify;
+        padding: 20px;
+        font-size: 13px;
+      }
+      
+      .action.input .psf-icon-color {
+        color: white !important;
+      }
+      
+      .psf-about-section {
+        text-overflow: clip;
+      }
+      
+      .psf-links > a {
+        color: white !important;
+        margin: 5px 0px;
+      }
+      
+      footer p {
+        text-align: justify;
+      }
+      
+      .psf-icon-text {
+        display: flex;
+        align-items: center;
+        text-align: center;
+      }
+      .psf-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+      .psf-links:hover {
+        cursor: pointer;
+      }
+      .psf-ouick-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .psf-links a {
+        font-size: 13px;
+        text-decoration: none;
+      }
+      .psf-contact-icons {
+        margin-top: 15px;
+        display: flex;
+        gap: 7px;
+        align-items: flex-start;
+      }
+      .psf-contact-spacing {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .psf-icon-color {
+        color: white !important;
+      }
+       h3{
+        margin-bottom: 15px;
+       }
+       #subscribe-email{
+        height: 40px;
+        width: 240px;
+        border-radius: 50px;
+        outline: none;
+        border: none;
+        padding-left: 20px;
+       }
+       .footer-info{
+        font-size: 13px;
+        margin-top: -5px;
+       }
+      @media (min-width: 1281px) {
+        footer {
+          height: 70vh;
+        }
+      
+        .psf-footer-layout {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          padding: 70px;
+        }
+        .psf-about-section,
+        .psf-contact-section,
+        .psf-ouick-links,
+        .psf-contact-mail {
+          height: auto;
+        }
+      
+        .psf-ouick-links {
+          width: 50%;
+        }
+      
+        .psf-contact-section {
+          padding-left: 50px;
+        }
+      
+        .psf-about-section {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        }
+       
+        .psf-icon-color {
+          color: white !important;
+          font-size: 13px !important;
+        }
+        .psf-links > a {
+          color: white !important;
+          font-size: 13px;
+        }
+      }
+      
