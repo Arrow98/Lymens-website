@@ -6,10 +6,42 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/index.css">
 </head>
-<body>
+<body >
+  <div class="overlay hidden" id="overlay">
+    <div class="application-form hidden" id="application-form">
+        
+        <form action="#" method="post" class="forms">
+          <div class="cancel-icon" id="cancel-icon"><img src="/images/cancel-icon-2048x2048-milcunum.png" alt=""></div>
+            <h2>School Application Form</h2>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+    
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+    
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+    
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" class="form-bottom" required>
+    
+            <label for="grade">Grade Applying For:</label>
+            <select id="grade" name="grade" class="form-bottom">
+                <option value="kindergarten">Kindergarten</option>
+                <option value="primary">Primary</option>
+                <option value="secondary">Secondary</option>
+            </select>
+    
+            <input type="submit" value="Submit Application" class="button">
+        </form>
+    </div>
+</div>
     <div class="navbar">
         <div id="school-name">Lymens Montessori</div>
-        <a href="#">Apply</a>
+        <a href="#" id="apply">Apply</a>
         <a href="/index.html#instructors">Instructors</a>
         <a href="/pages/contact.html">Contact Us</a>
         <a  href="/pages/aboutus.html">About Us</a>
@@ -17,7 +49,7 @@
     </div>
     <div class="explorer-section">
         <h2>A Life Time Of Confidence<br> Begins Here!!</h2>
-        <button class="read-more-btn">Read More</button>
+        <button class="read-more-btn button">Read More</button>
       </div>
 
     <div class="middle">
@@ -70,7 +102,7 @@
                           <div class="box"><img src="images/arrow-56-xxl.png" alt="">Movie Fridays</div>
                         </div>
                       </div>
-                <button class="about-info-btn">Read More</button>
+                <button class="about-info-btn button">Read More</button>
             </div>
     </div>
     <div class="employee-section" id="instructors">
@@ -188,7 +220,8 @@
             </div>
           </div>
         </div>
+       
       </footer>
-
+      <script src="script.js"></script>
 </body>
 </html>
