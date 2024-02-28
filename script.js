@@ -11,19 +11,28 @@ const form = document.getElementById("application-form")
     window.location.href = '/pages/aboutus.html';
     });
   }
-
-
-apply.addEventListener('click', function(){
+  function hidden(){
   overLay.classList.remove('hidden')
   form.classList.remove('hidden')
+  }
+
+function add (){
+  overLay.classList.add('hidden')
+  form.classList.add('hidden')
+}
+apply.addEventListener('click', function(){
+  hidden()
 })
    
 cancelIcon.addEventListener('click',function(){
-  overLay.classList.add('hidden')
-  form.classList.add('hidden')
+  add()
 })
 
 overLay.addEventListener('click',function(){
-  overLay.classList.add('hidden')
-  form.classList.add('hidden')
+  add()
 })
+
+document.getElementById("application-form").addEventListener("click", (e) => {
+  e.stopPropagation()
+ 
+} )
