@@ -36,3 +36,4 @@ document.getElementById("application-form").addEventListener("click", (e) => {
   e.stopPropagation()
  
 } )
+
