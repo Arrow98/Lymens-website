@@ -21,7 +21,7 @@ body{
     .navbar #school-name {
       float: left;
       color: white;
-      font-size: 33px;
+      font-size: 30px;
       font-weight: bold;
       height: 100%;
       display: flex;
@@ -82,10 +82,10 @@ body{
         height: 150px !important;
         resize: none;
       }
-      input[type="text"]:active,
+      input[type="text"]:focus,
       input[type="email"]:focus,
       textarea:focus {
-        border-color: navy;
+        outline: 2px solid navy;
       }
       
       button {
@@ -266,4 +266,8 @@ body{
         }
       }
       
-      
+      .logo{
+        width: 55px;
+        height: 40px;
+        object-fit: contain;
+      }
