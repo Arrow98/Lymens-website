@@ -189,8 +189,8 @@ img{
     width: 100%;
     height: 30%;
 }
-.grid2-img>img{
-    object-fit: cover;
+.grid2-img img{
+   object-fit: cover; 
 }
 .about-section{
     display: flex;

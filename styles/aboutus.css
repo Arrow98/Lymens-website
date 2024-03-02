@@ -7,6 +7,9 @@
 body{
     font-family: Georgia, "Times New Roman", Times, serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 .navbar {
     background-color: navy;
       overflow: hidden;
@@ -330,5 +333,6 @@ body{
       textarea:focus {
         outline: 2px solid navy;
       }
+      
       
       
